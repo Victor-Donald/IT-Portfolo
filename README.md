@@ -12,7 +12,7 @@ Welcome to my IT Support portfolio. This repository showcases real-world technic
 
 Want to see how I translate technical knowledge into seamless end-user resolutions? Explore my live interactive portfolio showcasing real-world troubleshooting frameworks, enterprise ticketing documentation, and multi-campus network diagnostics:
 
-👉 **[Professional Portfolio & IT Projects] (https://victor-donald.github.io/IT-Portfolio/)**
+👉 **[Professional Portfolio & IT Projects]([https://victor-donald.github.io/IT-Portfolio/](https://victor-donald.github.io/IT-Portfolio/)**
 
 * **Featured Workloads:**
   * **Incident Management:** Hands-on Remedy (BMC Helix) workflow simulations and SLA-compliant ticket resolution documentation.
