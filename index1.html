@@ -1,1 +1,14 @@
-
+   <!-- Project 2 -->
+    <div class="project-card">
+      <h3>2. Enterprise Network Diagnostics & Infrastructure Support Simulation</h3>
+      <p><strong>Scenario:</strong> A campus staff member lost all access to the localized intranet and student registration databases, disrupting critical administrative and student workflows.</p>
+      <p><strong>Triage & Resolution:</strong> Utilized advanced command-line diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (<code>169.254.x.x</code>), indicating a failed DHCP lease. Coordinated an immediate localized switch port reset with infrastructure teams and executed an IP release/renew cycle to successfully bind the client device to a valid dynamic campus subnet.</p>
+      
+      <div class="ticketing-box">
+        <h4>Enterprise Remedy Closure Entry</h4>
+        <p>
+          <span class="ticket-label">Status:</span> Closed | 
+          <span class="ticket-label">Root Cause:</span> Failed DHCP Lease via Localized Switch Port Drop<br><br>
+          <span class="ticket-label">Resolution:</span> Confirmed physical NIC functionality via loopback testing, performed IP release/renew, and successfully bound the device to the active campus subnet. Verified secure database and intranet access. All Service Level Agreements (SLAs) successfully met.
+        </p>
+      </div>
