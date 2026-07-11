@@ -1,14 +1,128 @@
-   <!-- Project 2 -->
-    <div class="project-card">
-      <h3>2. Enterprise Network Diagnostics & Infrastructure Support Simulation</h3>
-      <p><strong>Scenario:</strong> A campus staff member lost all access to the localized intranet and student registration databases, disrupting critical administrative and student workflows.</p>
-      <p><strong>Triage & Resolution:</strong> Utilized advanced command-line diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (<code>169.254.x.x</code>), indicating a failed DHCP lease. Coordinated an immediate localized switch port reset with infrastructure teams and executed an IP release/renew cycle to successfully bind the client device to a valid dynamic campus subnet.</p>
-      
-      <div class="ticketing-box">
-        <h4>Enterprise Remedy Closure Entry</h4>
-        <p>
-          <span class="ticket-label">Status:</span> Closed | 
-          <span class="ticket-label">Root Cause:</span> Failed DHCP Lease via Localized Switch Port Drop<br><br>
-          <span class="ticket-label">Resolution:</span> Confirmed physical NIC functionality via loopback testing, performed IP release/renew, and successfully bound the device to the active campus subnet. Verified secure database and intranet access. All Service Level Agreements (SLAs) successfully met.
-        </p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Donald | Network Diagnostics Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #1e293b;
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .sidebar, .main-content {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .project {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-left: 5px solid #10b981;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #059669;
+        }
+        .remedy-log {
+            background-color: #1e293b;
+            color: #34d399;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+        }
+        .remedy-title {
+            font-weight: bold;
+            color: #94a3b8;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Victor Donald</h1>
+        <p>Enterprise IT Help Desk & Network Diagnostics Portfolio</p>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar: Core Technical Skills -->
+        <aside class="sidebar">
+            <h2>🛠️ Core Technical Skills</h2>
+            <ul>
+                <li><strong>Help Desk Ticketing Systems:</strong> Remedy (BMC Helix) Incident Management</li>
+                <li><strong>Networking Infrastructure:</strong> TCP/IP, DNS, DHCP, Subnet Binding</li>
+                <li><strong>Hardware Diagnostics:</strong> Switch Port Configuration, NIC Loopback Testing</li>
+                <li><strong>Command-Line Tools:</strong> <code>ipconfig /all</code>, <code>nslookup</code>, <code>ping</code></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content: Project 2 Only -->
+        <main class="main-content">
+            <h2>📋 Featured Project & Workflow Simulation</h2>
+            
+            <div class="project">
+                <h3>Enterprise Network Diagnostics & Support Simulation</h3>
+                <p><strong>Scenario:</strong> A campus staff member lost access to the local intranet and student registration databases, disrupting administrative workflows.</p>
+                <p><strong>Triage & Resolution:</strong> Utilized command-line utilities (<code>ipconfig /all</code>) to diagnose an invalid APIPA address (169.254.x.x). Coordinated a localized switch port reset and executed an IP release/renew to bind the client device to a valid dynamic campus subnet.</p>
+                
+                <div class="remedy-title">Remedy Closure Entry:</div>
+                <div class="remedy-log">
+                    "Status: Closed. Root Cause: Failed DHCP lease due to localized switch port drop. Resolution: Confirmed NIC functionality via loopback, performed IP release/renew, and bound device to valid campus subnet. Verified database access. SLA met."
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
