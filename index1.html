@@ -13,31 +13,31 @@
             --text-muted: #5f6368;
             --bg-light: #f8f9fa;
             --border-color: #dadce0;
-            --card-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
-            background: #ffffff;
-            color: var(--text-main);
-            line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
+        /* Navigation */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 15px;
             margin-bottom: 40px;
-            border-bottom: 1px solid var(--border-color);
         }
 
         nav .nav-links {
@@ -49,6 +49,7 @@
             color: var(--primary);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -56,11 +57,12 @@
         }
 
         nav a.active {
-            font-weight: 700;
             color: var(--text-main);
+            font-weight: 700;
             pointer-events: none;
         }
 
+        /* Header */
         header {
             margin-bottom: 35px;
             border-bottom: 1px dashed var(--border-color);
@@ -79,37 +81,41 @@
             margin: 0;
         }
 
+        /* Card Layout */
         .card {
             background: #ffffff;
             border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 24px;
             margin-bottom: 24px;
-            box-shadow: var(--card-shadow);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         h2 {
+            font-size: 1.3rem;
             margin-top: 0;
-            font-size: 1.4rem;
+            margin-bottom: 15px;
             color: #111;
         }
 
         p {
-            margin-bottom: 15px;
+            margin: 0 0 15px 0;
+            color: #3c4043;
+            font-size: 1.05rem;
         }
 
         .btn {
             display: inline-block;
-            background: var(--primary);
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 6px;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 15px;
             text-decoration: none;
+            border-radius: 6px;
             font-weight: 600;
         }
 
         .btn:hover {
-            background: var(--primary-hover);
+            background-color: var(--primary-hover);
         }
 
         footer {
@@ -126,10 +132,11 @@
 
 <div class="container">
 
+    <!-- Navigation -->
     <nav>
         <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
         <div class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="index.html">Project 1</a>
             <a href="index1.html" class="active">Project 2</a>
             <a href="index2.html">Project 3</a>
             <a href="hardware-optimization.html">Hardware Optimization</a>
@@ -137,28 +144,33 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header>
         <h1>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</h1>
         <p class="subtitle">DeVry University Campus | October 2010 – December 2012</p>
     </header>
 
+    <!-- Technical Execution -->
     <section class="card">
         <h2>🛠️ Technical Execution</h2>
         <p>Fielded a critical help request regarding a total loss of intranet and database access. Utilized advanced command-line interface (CLI) diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (169.254.x.x).</p>
         <p>Coordinated an immediate switch port reset with infrastructure teams and executed an IP release/renew cycle to bind the client device to a valid dynamic subnet.</p>
     </section>
 
+    <!-- Business Value -->
     <section class="card">
         <h2>📈 Business Value & Outcome</h2>
         <p>Restored critical administrative and student registration workflows, preventing extended operational disruptions. Confirmed physical NIC functionality via loopback testing and verified secure database access while successfully meeting all SLA compliance metrics.</p>
     </section>
 
+    <!-- Evidence -->
     <section class="card">
         <h2>📂 Supporting Evidence</h2>
         <p>Network topology maps and detailed closure entries can be viewed at the main repository page:</p>
         <p><a href="https://victor-donald.github.io/IT-Portfolio/" class="btn">View Project 2 Case Studies →</a></p>
     </section>
 
+    <!-- Footer -->
     <footer>
         © 2026 Victor Donald — IT Help Desk & Remote Support Specialist
     </footer>
