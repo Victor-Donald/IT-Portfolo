@@ -4,43 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</title>
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292e; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1, h2, h3 { color: #0366d6; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
-        .meta { color: #586069; font-style: italic; margin-bottom: 20px; }
-        .section { margin-bottom: 25px; }
-        .btn { display: inline-block; background-color: #0366d6; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background-color: #0056b3; }
-        nav { margin-bottom: 30px; }
-        nav a { margin-right: 15px; color: #0366d6; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
+        :root {
+            --primary: #1a73e8;
+            --primary-hover: #1557b0;
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --bg-light: #f8f9fa;
+            --border-color: #dadce0;
+            --card-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            font-weight: 700;
+            color: var(--text-main);
+            pointer-events: none;
+        }
+
+        header {
+            margin-bottom: 35px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--card-shadow);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #111;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
     </style>
 </head>
+
 <body>
 
+<div class="container">
+
     <nav>
-        <a href="index.html">← Back to Project 1</a> | 
-        <a href="index2.html">Go to Project 3 →</a>
+        <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index1.html" class="active">Project 2</a>
+            <a href="index2.html">Project 3</a>
+            <a href="hardware-optimization.html">Hardware Optimization</a>
+            <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+        </div>
     </nav>
 
-    <h1>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</h1>
-    <p class="meta">DeVry University Campus | October 2010 - December 2012</p>
+    <header>
+        <h1>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</h1>
+        <p class="subtitle">DeVry University Campus | October 2010 – December 2012</p>
+    </header>
 
-    <div class="section">
+    <section class="card">
         <h2>🛠️ Technical Execution</h2>
-        <p>Fielded a critical help request regarding a total loss of intranet and database access. Utilized advanced command-line interface (CLI) diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (169.254.x.x). Coordinated an immediate switch port reset with infrastructure teams and executed an IP release/renew cycle to bind the client device to a valid dynamic subnet.</p>
-    </div>
+        <p>Fielded a critical help request regarding a total loss of intranet and database access. Utilized advanced command-line interface (CLI) diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (169.254.x.x).</p>
+        <p>Coordinated an immediate switch port reset with infrastructure teams and executed an IP release/renew cycle to bind the client device to a valid dynamic subnet.</p>
+    </section>
 
-    <div class="section">
+    <section class="card">
         <h2>📈 Business Value & Outcome</h2>
         <p>Restored critical administrative and student registration workflows, preventing extended operational disruptions. Confirmed physical NIC functionality via loopback testing and verified secure database access while successfully meeting all SLA compliance metrics.</p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="card">
         <h2>📂 Supporting Evidence</h2>
         <p>Network topology maps and detailed closure entries can be viewed at the main repository page:</p>
-        <p><a href="https://victor-donald.github.io/IT-Portfolio/" class="btn">View Project 2 Case Studies</a></p>
-    </div>
+        <p><a href="https://victor-donald.github.io/IT-Portfolio/" class="btn">View Project 2 Case Studies →</a></p>
+    </section>
+
+    <footer>
+        © 2026 Victor Donald — IT Help Desk & Remote Support Specialist
+    </footer>
+
+</div>
 
 </body>
 </html>
