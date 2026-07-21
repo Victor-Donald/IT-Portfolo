@@ -1,181 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</title>
-
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --primary-hover: #1557b0;
-            --text-main: #202124;
-            --text-muted: #5f6368;
-            --bg-light: #f8f9fa;
-            --border-color: #dadce0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 40px;
-        }
-
-        nav .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav a.active {
-            color: var(--text-main);
-            font-weight: 700;
-            pointer-events: none;
-        }
-
-        /* Header */
-        header {
-            margin-bottom: 35px;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 25px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 0 0 10px 0;
-            color: #111;
-        }
-
-        .subtitle {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        /* Card Layout */
-        .card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #111;
-        }
-
-        p {
-            margin: 0 0 15px 0;
-            color: #3c4043;
-            font-size: 1.05rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            background-color: var(--primary-hover);
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Enterprise Network Diagnostics | Victor Donald</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- Navigation -->
-    <nav>
-        <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
-        <div class="nav-links">
-            <a href="index.html">Project 1</a>
-            <a href="index1.html" class="active">Project 2</a>
-            <a href="index2.html">Project 3</a>
-            <a href="hardware-optimization.html">Hardware Optimization</a>
-            <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+  <div class="detail-layout">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">Victor Donald</div>
+        <div class="brand-role">IT Help Desk Technician</div>
+        <div class="brand-tags">
+          Network Diagnostics · DHCP Remediation · SLA-Driven Support
         </div>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <h1>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</h1>
-        <p class="subtitle">DeVry University Campus | October 2010 – December 2012</p>
+        <div class="contact-strip">
+          <span>Washington, DC</span>
+          <span><a href="index.html">Back to Overview</a></span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Overview</a>
+        <a href="index1.html">Network Diagnostics</a>
+        <a href="index2.html">Hardware Deployment & OS</a>
+        <a href="hardware-optimization.html">PC Optimization</a>
+        <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+      </nav>
     </header>
 
-    <!-- Technical Execution -->
-    <section class="card">
-        <h2>🛠️ Technical Execution</h2>
-        <p>Fielded a critical help request regarding a total loss of intranet and database access. Utilized advanced command-line interface (CLI) diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (169.254.x.x).</p>
-        <p>Coordinated an immediate switch port reset with infrastructure teams and executed an IP release/renew cycle to bind the client device to a valid dynamic subnet.</p>
-    </section>
+    <main>
+      <section class="detail-header">
+        <div class="detail-title">Enterprise Network Diagnostics & Infrastructure Support</div>
+        <div class="detail-subtitle">
+          Academic simulation focused on restoring critical university administrative and student registration workflows.
+        </div>
+        <div class="detail-meta">
+          <span class="badge">DHCP</span>
+          <span class="badge">APIPA Remediation</span>
+          <span class="badge">Switch Port Configuration</span>
+          <span class="badge badge-accent">SLA Compliance</span>
+        </div>
+      </section>
 
-    <!-- Business Value -->
-    <section class="card">
-        <h2>📈 Business Value & Outcome</h2>
-        <p>Restored critical administrative and student registration workflows, preventing extended operational disruptions. Confirmed physical NIC functionality via loopback testing and verified secure database access while successfully meeting all SLA compliance metrics.</p>
-    </section>
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>
+          This project was executed within a simulated university environment to diagnose and resolve
+          network connectivity failures impacting administrative and student registration systems.
+          The goal was to restore reliable access to critical services while maintaining strict SLA requirements.
+        </p>
+      </section>
 
-    <!-- Evidence -->
-    <section class="card">
-        <h2>📂 Supporting Evidence</h2>
-        <p>Network topology maps and detailed closure entries can be viewed at the main repository page:</p>
-        <p><a href="https://victor-donald.github.io/IT-Portfolio/" class="btn">View Project 2 Case Studies →</a></p>
-    </section>
+      <section class="detail-section">
+        <h2>Technical Objectives</h2>
+        <ul>
+          <li>Identify root causes of DHCP assignment failures and APIPA address issues.</li>
+          <li>Restore network connectivity for affected endpoints under tight SLA guidelines.</li>
+          <li>Verify secure database access and network stability through loopback testing.</li>
+          <li>Document diagnostic steps to support repeatable troubleshooting workflows.</li>
+        </ul>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        © 2026 Victor Donald — IT Help Desk & Remote Support Specialist
-    </footer>
+      <section class="detail-section">
+        <h2>Execution</h2>
+        <p>
+          I used CLI tools, specifically <code>ipconfig</code>, to analyze DHCP leases and detect endpoints
+          that had fallen back to APIPA addresses. This allowed me to quickly isolate misconfigured or
+          non-responsive DHCP services.
+        </p>
+        <p>
+          After identifying the issue, I coordinated with the infrastructure team to perform targeted
+          switch port resets and configuration checks. I then validated connectivity using local loopback
+          tests to ensure that endpoints could securely reach database systems and application servers.
+        </p>
+        <p>
+          All steps were documented to create a clear troubleshooting path that could be reused for
+          future incidents, supporting SLA compliance and faster resolution times.
+        </p>
+      </section>
 
-</div>
+      <section class="detail-section">
+        <h2>Outcome</h2>
+        <ul>
+          <li>Restored full network connectivity for impacted administrative and student endpoints.</li>
+          <li>Verified secure database access via loopback testing and connectivity checks.</li>
+          <li>Maintained SLA compliance through rapid diagnosis and remediation.</li>
+          <li>Established a repeatable diagnostic workflow for DHCP and APIPA-related issues.</li>
+        </ul>
+      </section>
 
+      <section class="detail-section">
+        <h2>Skills Demonstrated</h2>
+        <div class="detail-skills">
+          <span class="badge">Network Diagnostics (CLI)</span>
+          <span class="badge">DHCP Remediation</span>
+          <span class="badge">APIPA Troubleshooting</span>
+          <span class="badge">Switch Port Configuration</span>
+          <span class="badge">Loopback Testing</span>
+          <span class="badge badge-accent">SLA-Driven Support</span>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Related Experience</h2>
+        <p>
+          At DeVry University, I resolved 20–30 daily hardware, software, and network connectivity issues
+          as a Tier 1 Help Desk Technician, documenting all incidents in Remedy ITSM and providing
+          step-by-step guidance that reduced Tier 2 escalations by 25%.
+        </p>
+      </section>
+
+      <footer class="detail-footer">
+        <span>Part of academic simulation portfolio.</span>
+        <span><a href="index.html">← Back to Portfolio Home</a></span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
