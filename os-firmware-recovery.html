@@ -1,186 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operating System Deployment & Firmware Recovery</title>
-
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --primary-hover: #1557b0;
-            --text-main: #202124;
-            --text-muted: #5f6368;
-            --bg-light: #f8f9fa;
-            --border-color: #dadce0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 40px;
-        }
-
-        nav .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav a.active {
-            color: var(--text-main);
-            font-weight: 700;
-            pointer-events: none;
-        }
-
-        /* Header */
-        header {
-            margin-bottom: 35px;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 25px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 0 0 10px 0;
-            color: #111;
-        }
-
-        .subtitle {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        /* Card Layout */
-        .card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #111;
-        }
-
-        p, li {
-            color: #3c4043;
-            font-size: 1.05rem;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>OS & Firmware Recovery & Device Restoration | Victor Donald</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- Navigation -->
-    <nav>
-        <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
-        <div class="nav-links">
-            <a href="index.html">Project 1</a>
-            <a href="index1.html">Project 2</a>
-            <a href="index2.html">Project 3</a>
-            <a href="hardware-optimization.html">Hardware Optimization</a>
-            <a href="os-firmware-recovery.html" class="active">OS & Firmware Recovery</a>
+  <div class="detail-layout">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">Victor Donald</div>
+        <div class="brand-role">IT Help Desk Technician</div>
+        <div class="brand-tags">
+          Firmware Recovery · OS Repair · Boot Troubleshooting
         </div>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <h1>Operating System Deployment & Firmware Recovery</h1>
-        <p class="subtitle">Technical Project | Device Recovery & Troubleshooting</p>
+        <div class="contact-strip">
+          <span>Washington, DC</span>
+          <span><a href="index.html">Back to Overview</a></span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Overview</a>
+        <a href="index1.html">Network Diagnostics</a>
+        <a href="index2.html">Hardware Deployment & OS</a>
+        <a href="hardware-optimization.html">PC Optimization</a>
+        <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+      </nav>
     </header>
 
-    <!-- Business Value -->
-    <section class="card">
-        <h2>Business Value</h2>
-        <p>Restored full device functionality and ensured compatibility across refurbished systems to support seamless user operations and reduce downtime.</p>
-    </section>
+    <main>
+      <section class="detail-header">
+        <div class="detail-title">OS & Firmware Recovery & Device Restoration</div>
+        <div class="detail-subtitle">
+          Recovering non-functional systems through firmware resets, OS repair utilities, and boot configuration fixes.
+        </div>
+        <div class="detail-meta">
+          <span class="badge">BIOS/UEFI</span>
+          <span class="badge">DISM</span>
+          <span class="badge">SFC</span>
+          <span class="badge">bootrec</span>
+          <span class="badge badge-accent">Device Restoration</span>
+        </div>
+      </section>
 
-    <!-- Responsibilities -->
-    <section class="card">
-        <h2>Project Responsibilities</h2>
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>
+          This project showcases hands-on recovery of devices experiencing boot loops, firmware errors,
+          and corrupted operating system files. The focus was on restoring functionality without resorting
+          to full hardware replacement, using a combination of firmware tools and OS repair utilities.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Technical Objectives</h2>
         <ul>
-            <li>Executed clean operating system reinstalls and configured custom local user accounts on refurbished tablet devices.</li>
-            <li>Diagnosed and resolved system driver conflicts, manually deploying and updating firmware to ensure hardware compatibility with peripheral devices such as Bluetooth keyboards.</li>
-            <li>Troubleshot seized hardware and internal cooling systems, managing motherboard and heatsink assemblies to resolve thermal throttling and hardware faults.</li>
+          <li>Reset and restore BIOS/UEFI firmware settings on malfunctioning systems.</li>
+          <li>Repair corrupted Windows environments using recovery tools and deployment media.</li>
+          <li>Fix boot configuration issues preventing successful startup.</li>
+          <li>Validate system stability and reliability after recovery.</li>
         </ul>
-    </section>
+      </section>
 
-    <!-- Outcome -->
-    <section class="card">
+      <section class="detail-section">
+        <h2>Execution</h2>
+        <p>
+          I began by accessing BIOS/UEFI interfaces to reset misconfigured firmware settings and restore
+          default configurations where necessary. For systems with OS-level corruption, I used Windows
+          recovery tools such as <code>DISM</code>, <code>SFC</code>, and <code>bootrec</code> to repair
+          system files and rebuild boot records.
+        </p>
+        <p>
+          In cases where repair was insufficient, I deployed clean OS images using bootable media,
+          ensuring that drivers and critical services were available post-installation. After each recovery,
+          I ran diagnostics and monitored system behavior to confirm stability and reliability.
+        </p>
+      </section>
+
+      <section class="detail-section">
         <h2>Outcome</h2>
-        <p>Delivered stable OS performance, improved device reliability, and ensured refurbished units met operational standards for daily use, enabling redeployment at zero hardware replacement cost.</p>
-    </section>
-
-    <!-- Skills -->
-    <section class="card">
-        <h2>Skills Used</h2>
         <ul>
-            <li>OS Installation & Configuration</li>
-            <li>Firmware Deployment</li>
-            <li>Driver Troubleshooting</li>
-            <li>Thermal Diagnostics</li>
-            <li>Hardware Repair</li>
+          <li>Successfully restored multiple devices from non-functional states to full operation.</li>
+          <li>Reduced downtime by avoiding unnecessary hardware replacement.</li>
+          <li>Established a repeatable workflow for firmware and OS recovery.</li>
+          <li>Improved confidence in recovery procedures for future incidents.</li>
         </ul>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        © 2026 Victor Donald — IT Help Desk & Remote Support Specialist  
-        <br><a href="index.html" style="color:var(--primary); font-weight:600;">← Back to Portfolio Home</a>
-    </footer>
+      <section class="detail-section">
+        <h2>Skills Demonstrated</h2>
+        <div class="detail-skills">
+          <span class="badge">Firmware Recovery (BIOS/UEFI)</span>
+          <span class="badge">OS Repair Utilities (DISM, SFC, bootrec)</span>
+          <span class="badge">Boot Configuration Troubleshooting</span>
+          <span class="badge">Recovery Media Deployment</span>
+          <span class="badge badge-accent">Diagnostic Testing</span>
+        </div>
+      </section>
 
-</div>
+      <section class="detail-section">
+        <h2>Related Work</h2>
+        <p>
+          This recovery-focused project complements my Enterprise Hardware Deployment & OS Specialization
+          work, where standardized images and driver injection help prevent many issues that later require
+          recovery and repair.
+        </p>
+      </section>
 
+      <footer class="detail-footer">
+        <span>Focused on restoring functionality and minimizing replacement costs.</span>
+        <span><a href="index.html">← Back to Portfolio Home</a></span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
