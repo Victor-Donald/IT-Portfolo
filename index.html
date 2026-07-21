@@ -1,212 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Donald IT Portfolio | Professional Overview</title>
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --primary-hover: #1557b0;
-            --text-main: #202124;
-            --text-muted: #5f6368;
-            --bg-light: #f8f9fa;
-            --border-color: #dadce0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Top Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 40px;
-        }
-
-        nav .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav a.active {
-            color: var(--text-main);
-            font-weight: 700;
-            pointer-events: none;
-        }
-
-        /* Header Layout */
-        header {
-            margin-bottom: 35px;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 25px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: #111111;
-            margin: 0 0 10px 0;
-            line-height: 1.3;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        /* Content Sections */
-        .card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #111111;
-        }
-
-        p {
-            margin: 0 0 15px 0;
-            color: #3c4043;
-            font-size: 1.05rem;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Project Grid/List for Directory */
-        .project-directory {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .project-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            margin-bottom: 12px;
-            background-color: var(--bg-light);
-        }
-
-        .project-item a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .project-item a:hover {
-            text-decoration: underline;
-        }
-
-        .project-tag {
-            font-size: 0.8rem;
-            background: #e8f0fe;
-            color: var(--primary);
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Victor Donald | IT Help Desk Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="layout">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">Victor Donald</div>
+        <div class="brand-role">IT Help Desk Technician</div>
+        <div class="brand-tags">
+          Technical Support · Hardware Optimization · OS Deployment · Network Diagnostics
+        </div>
+        <div class="contact-strip">
+          <span>Washington, DC</span>
+          <span>202-760-7904</span>
+          <span><a href="mailto:Victor.Donald1@outlook.com">Victor.Donald1@outlook.com</a></span>
+          <span><a href="https://www.linkedin.com/in/victor-donald-401040420" target="_blank">LinkedIn</a></span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Overview</a>
+        <a href="index1.html">Network Diagnostics</a>
+        <a href="index2.html">Hardware Deployment & OS</a>
+        <a href="hardware-optimization.html">PC Optimization</a>
+        <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+      </nav>
+    </header>
 
-    <div class="container">
-        
-        <!-- Top Unified Navigation Bar -->
-        <nav>
-            <span style="font-weight: 700; font-size: 1.1rem; color: #111111;">IT Portfolio</span>
-            <div class="nav-links">
-                <a href="index.html" class="active">Project 1</a>
-                <a href="index1.html">Project 2</a>
-                <a href="index2.html">Project 3</a>
-                <a href="hardware-optimization.html">PC Hardware Optimization & Storage Upgrade</a>
-          <a href="os-firmware-recovery.html">Operating System Deployment & Firmware Recovery</a>
-        
-            </div>
-        </nav>
+    <section class="hero">
+      <div class="hero-main">
+        <h1>Hands-on IT Support, Built for Real Environments</h1>
+        <p>
+          I’m an IT Help Desk Technician with 2+ years of experience resolving hardware, software,
+          and network issues across healthcare, corporate, and higher education environments.
+          I specialize in turning complex technical problems into clear, step-by-step solutions
+          that non-technical users can follow.
+        </p>
+        <p>
+          My work spans Windows environments, Active Directory, ticketing systems, remote support,
+          and infrastructure troubleshooting—with a strong focus on reliability, documentation,
+          and user experience.
+        </p>
+        <div class="hero-highlight">
+          Reduced Tier 2 escalations by 25% by delivering clear, patient, and step-by-step
+          troubleshooting documentation for non-technical staff, while maintaining complete
+          incident records in Remedy ITSM.
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <h2>Core Stack & Focus Areas</h2>
+        <ul>
+          <li>Windows 11/10/7 · Windows Server · macOS</li>
+          <li>Hardware & Software Troubleshooting · Desktop Support</li>
+          <li>Active Directory · Account & Access Management</li>
+          <li>TCP/IP · DNS · DHCP · VPN · LAN/WAN Fundamentals</li>
+          <li>Amazon Workspaces · VMware · VirtualBox · CLI Tools</li>
+          <li>Technical Documentation · End-User Training · Incident Logging</li>
+        </ul>
+      </aside>
+    </section>
 
-        <header>
-            <h1>Project 1: Remote IT Support & Lifecycle Management</h1>
-            <p class="subtitle">Remedy Ticketing (BMC Helix) System Integration</p>
-        </header>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">Featured Projects</div>
+        <div class="section-subtitle">
+          Real and simulated environments showcasing troubleshooting, deployment, and recovery.
+        </div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">Enterprise Network Diagnostics & Infrastructure Support</div>
+            <div class="card-tag">Network · DHCP · APIPA</div>
+          </div>
+          <div class="card-body">
+            Restored critical simulated university workflows by diagnosing DHCP failures,
+            remediating APIPA issues, and coordinating switch port resets under tight SLA guidelines.
+          </div>
+          <div class="card-meta">
+            <span class="badge">ipconfig · CLI</span>
+            <span class="badge">DHCP Remediation</span>
+            <span class="badge badge-accent">SLA Compliance</span>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="index1.html">View Project</a>
+          </div>
+        </article>
 
-        <main>
-            <!-- Core Project Content Card -->
-            <section class="card">
-                <h2>Technical Execution & Overview</h2>
-                <p>Managed remote deployment, hardware lifecycle support, and secure workstation configurations across distributed enterprise environments. Structured core optimization frameworks to streamline system stability and user accessibility.</p>
-                <p><strong>Technical Execution:</strong> Diagnosed critical domain login constraints using Remedy (BMC Helix) and enterprise remote tools; resolved post-update OS corruption by deploying an organization-validated master image and repairing BCD integrity.</p>
-                <p><strong>Business Value & Outcome:</strong> Minimized end-user downtime during a critical window and verified full remote connectivity to close the ticket within a strict 45-minute SLA milestone.</p>
-            </section>
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">Enterprise Hardware Deployment & OS Specialization</div>
+            <div class="card-tag">Deployment · Drivers · OS</div>
+          </div>
+          <div class="card-body">
+            Built custom bootable media and injected device-specific drivers for Surface, HP,
+            and Lenovo devices to eliminate internet dependencies and accelerate provisioning.
+          </div>
+          <div class="card-meta">
+            <span class="badge">Driver Injection</span>
+            <span class="badge">Bootable Media</span>
+            <span class="badge badge-accent">Disaster Recovery Baseline</span>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="index2.html">View Project</a>
+          </div>
+        </article>
 
-            <!-- Portfolio Directory Linking to Index1 and Index2 -->
-            <section class="card" style="margin-top: 40px; border-top: 3px solid var(--primary);">
-                <h2>📂 Portfolio Directory</h2>
-                <p style="color: var(--text-muted); margin-bottom: 20px;">Navigate through the documented case studies and technical simulations within this infrastructure portfolio:</p>
-                
-                <ul class="project-directory">
-                    <!-- Project 1 (Current) -->
-                    <li class="project-item">
-                        <span><strong>Project 1:</strong> Remote Support & Lifecycle Management</span>
-                        <span class="project-tag" style="background:#dadce0; color:#3c4043;">Current Page</span>
-                    </li>
-                    
-                    <!-- Project 2 -->
-                    <li class="project-item">
-                        <span><strong>Project 2:</strong> Network Diagnostics Simulation</span>
-                        <a href="index1.html">View Project 2 &rarr;</a>
-                    </li>
-                    
-                    <!-- Project 3 -->
-                    <li class="project-item">
-                        <span><strong>Project 3:</strong> Hardware Deployment & OS Specialization</span>
-                        <a href="index2.html">View Project 3 &rarr;</a>
-                    </li>
-                </ul>
-            </section>
-     
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">PC Hardware Optimization & Storage Upgrade</div>
+            <div class="card-tag">Hardware · SSD · Performance</div>
+          </div>
+          <div class="card-body">
+            Extended hardware lifespan and improved responsiveness by performing SSD upgrades,
+            disk partitioning, and storage optimization across refurbished and personal systems.
+          </div>
+          <div class="card-meta">
+            <span class="badge">SSD Replacement</span>
+            <span class="badge">Disk Partitioning</span>
+            <span class="badge badge-accent">Reliability Gains</span>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="hardware-optimization.html">View Project</a>
+          </div>
+        </article>
 
-        </main>
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">OS & Firmware Recovery & Device Restoration</div>
+            <div class="card-tag">Recovery · Firmware · OS</div>
+          </div>
+          <div class="card-body">
+            Recovered non-functional systems through firmware resets, OS repair utilities,
+            and boot configuration troubleshooting to restore devices without full replacement.
+          </div>
+          <div class="card-meta">
+            <span class="badge">BIOS/UEFI</span>
+            <span class="badge">DISM · SFC · bootrec</span>
+            <span class="badge badge-accent">Device Restoration</span>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="os-firmware-recovery.html">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    </div>
-
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">Education & Certifications</div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-title">Graduate Certificate in Cybersecurity & Information Assurance</div>
+          <div class="card-body">
+            Keller Graduate School of Management · Expected February 2027
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-title">Master of Information Systems Management</div>
+          <div class="card-body">
+            Keller Graduate School of Management · October 2019
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-title">Bachelor of Science in Network & Communication Management</div>
+          <div class="card-body">
+            DeVry University · December 2012
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-title">Google IT Support Professional Certificate</div>
+          <div class="card-body">
+            Completed September 2022 · CompTIA A+ In Progress
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
