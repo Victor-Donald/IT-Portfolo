@@ -14,7 +14,8 @@
     <a href="hardware-optimization.html" style="color:white; margin-right:20px; text-decoration:none;">Hardware Optimization</a>
   <a href="os-firmware-recovery.html" style="color:white; margin-right:20px; text-decoration:none;">OS & Firmware Recovery</a>
   <a href="contact.html" style="color:white; text-decoration:none;">Contact</a>
-</nav>
+<a href="aws-case-study.html">View AWS Case Study</a>
+  </nav>
 
 <body>
 
@@ -58,49 +59,43 @@
       </section>
 
       <section class="detail-section">
-        <h2>Overview</h2>
-        <p>
-          This project focused on modernizing device provisioning across Surface, HP, and Lenovo hardware
-          by replacing generic Windows 11 environments with locally optimized enterprise configurations.
-          The goal was to reduce provisioning time, eliminate internet dependencies, and establish a
-          consistent disaster recovery baseline.
-        </p>
-      </section>
+      <!-- Short Intro Section -->
+<section class="detail-section">
+  <h2>Overview</h2>
+  <p>
+    Architected and executed an enterprise-grade hardware deployment strategy by engineering custom Windows 11 bootable media and injecting platform-specific drivers across 5 distinct hardware profiles (including Microsoft Surface, HP, and Lenovo endpoints). This project eliminated external network dependencies during provisioning, streamlined disaster recovery baselines, and integrated identity access templates for enhanced endpoint security.
+  </p>
+</section>
 
-      <section class="detail-section">
-        <h2>Technical Objectives</h2>
-        <ul>
-          <li>Build custom bootable media that does not rely on active internet connectivity.</li>
-          <li>Inject device-specific hardware drivers into master deployment images.</li>
-          <li>Standardize OS configurations across multiple hardware vendors.</li>
-          <li>Establish a repeatable cross-platform disaster recovery workflow.</li>
-        </ul>
-      </section>
+<!-- Business Value Section -->
+<section class="detail-section">
+  <h2>Business Value</h2>
+  <ul>
+    <li>
+      <strong>Downtime & Provisioning Cost Reduction:</strong> Streamlined the endpoint setup workflow to drastically reduce device staging time and eliminate network bandwidth overhead during mass OS rollouts.
+    </li>
+    <li>
+      <strong>Zero-Trust Network Independence:</strong> Guaranteed operational continuity by enabling offline deployment capabilities, allowing systems to be fully provisioned in secure, air-gapped, or low-connectivity environments.
+    </li>
+    <li>
+      <strong>Cross-Architecture Standardization:</strong> Unified deployment protocols across diverse hardware architectures (x86, x64, and ARM64), simplifying ongoing IT maintenance and driver patch management.
+    </li>
+    <li>
+      <strong>Enhanced System Reliability & Longevity:</strong> Mitigated hardware degradation risks through driver-level optimizations and thermal management, protecting hardware investments.
+    </li>
+  </ul>
+</section>
 
-      <section class="detail-section">
-        <h2>Execution</h2>
-        <p>
-          I used command line tools to construct custom bootable media tailored for Surface, HP, and Lenovo
-          devices. This included injecting hardware-specific drivers directly into master deployment files
-          so that devices could be provisioned without downloading drivers during setup.
-        </p>
-        <p>
-          Storage provisioning and OS specialization settings were configured to align with enterprise
-          standards, ensuring consistent performance and security across the fleet. I validated deployments
-          by testing the images on multiple device models and confirming that all critical drivers and
-          services were available immediately after installation.
-        </p>
-      </section>
-
-      <section class="detail-section">
-        <h2>Outcome</h2>
-        <ul>
-          <li>Eliminated active internet dependencies during OS deployment.</li>
-          <li>Reduced device provisioning times by streamlining driver availability.</li>
-          <li>Improved reliability and consistency across Surface, HP, and Lenovo hardware.</li>
-          <li>Established a cross-platform disaster recovery baseline using standardized images.</li>
-        </ul>
-      </section>
+<!-- Outcome Section -->
+<section class="detail-section">
+  <h2>Outcome</h2>
+  <ul>
+    <li><strong>100% Offline Provisioning:</strong> Successfully eliminated active internet dependencies during OS installation across all 5 device profiles.</li>
+    <li><strong>Accelerated Deployment Cycles:</strong> Significantly reduced overall device provisioning and imaging times.</li>
+    <li><strong>Standardized Recovery Baseline:</strong> Established a reliable, cross-platform disaster recovery image for rapid endpoint restoration.</li>
+    <li><strong>Cross-Platform Compatibility:</strong> Verified seamless driver stability across both traditional desktop platforms and mobile Surface devices (ARM64 & x86).</li>
+  </ul>
+</section>
 
       <section class="detail-section">
         <h2>Skills Demonstrated</h2>
@@ -109,7 +104,11 @@
           <span class="badge">Bootable Media Creation</span>
           <span class="badge">OS Specialization</span>
           <span class="badge">Storage Provisioning</span>
+          <span class="badge">Custom OS Provisioning</span>
+          <span class="badge">ARM64/x86 Compatibility</span>
           <span class="badge badge-accent">CLI Automation</span>
+          <span class="badge">IAM/Biometric Integration</span>
+          <span class="badge">CLI Tools</span>
         </div>
       </section>
 
